@@ -3,7 +3,7 @@
 Utility function, remove item from `$env:Path`
 
 ```powershell
-function CleanPath() {
+function UpdatePath() {
 
     $list = New-Object Collections.Generic.List[String]
     $Env:PATH.Split(";") | ForEach-Object {
