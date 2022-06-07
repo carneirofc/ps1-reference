@@ -14,6 +14,8 @@ function UpdatePath() {
         }
         $list.Add($_);
     }
+    # Add more things to path
+    # $list.Add();
     $env:Path = [string]::Join(";", $list)    
 }
 ```
@@ -32,5 +34,5 @@ Set-Alias -Name gitd -Value GitSatatus
 
 Uunix like tab completion:
 ```powershell
-Set-PSReadlineKeyHandler -Key Tab -Function Complete
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 ```
